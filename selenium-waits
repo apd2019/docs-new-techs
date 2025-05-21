@@ -1,0 +1,19 @@
+👉 Implicit waits:  
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+
+ 👉 Explicit waits:
+Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    wait.until(d -> revealed.isDisplayed());
+
+👉 Fluent waits:
+  Wait<WebDriver> wait =
+        new FluentWait<>(driver)
+            .withTimeout(Duration.ofSeconds(2))
+            .pollingEvery(Duration.ofMillis(300))
+            .ignoring(ElementNotInteractableException.class);
+    wait.until(
+        d -> {
+          revealed.sendKeys("Displayed");
+          return true;
+
+        }); 
