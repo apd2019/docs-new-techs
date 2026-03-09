@@ -1,5 +1,7 @@
 What is this tutorial about?
 * if you forgot your password and are not able to remember it and wish to reset the whole system or format it.
+* You don't need to format anything
+* it can be done w/o formatting or resetting :)
 
 WorkFlow-
 * press shift while restarting the system and hold until the booting menu loads
